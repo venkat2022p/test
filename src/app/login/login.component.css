@@ -1,0 +1,13 @@
+img{
+    width: 65em;
+    height: 46em;
+}
+.login-page{
+    position: relative;
+    margin-top: 200px;
+    line-height: 30px;
+}
+.login-left{
+    background-color:#7532f9 !important ;
+
+}

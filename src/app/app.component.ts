@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'caliberFocus';
+  constructor(){
+    localStorage.setItem("isLoggedIn","false")
+  }
 }

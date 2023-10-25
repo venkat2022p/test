@@ -1,0 +1,41 @@
+<div class="container-fluid h-100">
+    <div class="row">
+      <div class="col">
+        <img src="https://img.freepik.com/free-vector/luxury-wave-gradient-background-dark-modern-design_343694-3089.jpg" alt="">
+      </div>
+      <div class="col">
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="login-page">
+                        <h5 class="text-center">Login page</h5>
+                        <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" >
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control bi bi-envelope" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
+                                <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                                    <div *ngIf="email.errors">Email is required</div>
+                                    <div *ngIf="email.errors">Email must be a valid email address</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required minlength="6" />
+                                <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+                                    <div *ngIf="password.errors">Password is required</div>
+                                    <div *ngIf="password.errors">Password must be at least 6 characters</div>
+                                </div>
+                            </div><br>
+                            <div class="form-group">
+                                <button class="btn btn-primary" >Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+

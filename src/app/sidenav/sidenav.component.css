@@ -1,0 +1,32 @@
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 72px;
+    left: 0;
+    background-color:#3f51b5 !important ;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 10px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    /* line-height: 40px; */
+  }
+  
+  .sidenav a:hover {
+    color: blue;
+    background-color: #fff;
+ 
+  }
+  .sidenav a:focus {
+    color: blue;
+    background-color: #fff;
+ 
+  }

@@ -1,0 +1,26 @@
+
+<div class="card w-50 mt-3">
+
+  <div class="card-body ">
+
+    <h6 class="card-title">Angular Internationalization (i18n)</h6>
+
+    <div class="btn-group btn-group-sm py-5">
+
+      <button type="button" class="btn btn-sm btn-outline-primary" (click)="changeLanguage('en-US')" [class.active]="!translateService.currentLang || translateService.currentLang === 'en-US'">English</button>
+
+      <button type="button" class="btn btn-sm btn-outline-primary" (click)="changeLanguage('hi-HI')" [class.active]="translateService.currentLang === 'hi-HI'">Hindi</button>
+
+      <button type="button" class="btn btn-sm btn-outline-primary" (click)="changeLanguage('ar-ARR')" [class.active]="translateService.currentLang === 'ar-ARR'">Arabic</button>
+
+      <button type="button" class="btn btn-sm btn-outline-primary" (click)="changeLanguage('fr-FR')" [class.active]="translateService.currentLang === 'fr-FR'">Frances</button>
+
+      <button type="button" class="btn btn-sm btn-outline-primary" (click)="changeLanguage('pt-BR')" [class.active]="translateService.currentLang === 'pt-BR'">Portugues</button>
+      
+    </div>
+  
+    <h6>{{ "Angular Internationalization (i18n)" | translate}}</h6>
+
+  </div>
+
+</div>

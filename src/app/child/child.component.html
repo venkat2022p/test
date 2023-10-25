@@ -1,0 +1,21 @@
+<div class="child">
+
+    <p>
+        <b> This Data is Recevied from Parent: <span class="text-primary">{{item}}</span></b>
+    </p>
+
+</div>
+
+<hr>
+
+<div class="mt-5">
+
+    <h6>Communicate between Child to Parent Component</h6>
+
+    <label for="item-input">Add an item:</label>
+
+    <input type="text" id="item-input" #newItem>
+
+    <button type="button" class="button" (click)="addNewItem(newItem.value)">Add </button>
+
+</div>
